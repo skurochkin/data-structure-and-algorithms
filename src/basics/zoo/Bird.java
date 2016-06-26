@@ -1,4 +1,4 @@
-package zoo;
+package basics.zoo;
 
 /**
  * Created by slavkurochkin on 6/23/16.
