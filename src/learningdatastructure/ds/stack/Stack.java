@@ -1,4 +1,4 @@
-package learningdatastructure.stack;
+package learningdatastructure.ds.stack;
 
 /**
  * Created by slavkurochkin on 6/26/16.

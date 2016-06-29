@@ -1,4 +1,4 @@
-package learningdatastructure.queue;
+package learningdatastructure.ds.queue;
 
 /**
  * Created by slavkurochkin on 6/26/16.
