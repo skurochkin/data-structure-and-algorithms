@@ -99,7 +99,10 @@ public class DoublyLinkedList {
         return true;
     }
 
+    // assume non-empty list
+    public Node deleteKey(int key){
 
+    }
 
 
 
