@@ -61,7 +61,43 @@ public class DoublyLinkedList {
 
 
     // assume not-empty
+    public Node deleteLast(){
+        Node temp = last;
+        if(first.next == null){ // we only have one node in this list
+            first = null;
 
+        }else{
+          last.previous.next = null; // the last node's previos node's next field will point to null
+        }
+        last = last.previous;
+        return temp;
+    }
+
+    // assume non-empty list
+    public boolean insertAfter(int key, int data){
+        Node current = first; // we start from the beggingig of the list
+        while(current.data != key){ // as long as we have not found the key in a particular node
+           current = current.next;
+            if(current == null){
+                return false;
+            }
+        }
+
+        Node newNode = new Node();
+        newNode.data = data;
+
+        if(current == last) {
+            current.next = null;
+            last = newNode;
+        }else{
+            newNode.next = current.next; // new node's  next field should point to the node ahead of the current one
+            current.next.previous = newNode; // the node ahead of current, it's previous field should point to the new node
+            }
+        newNode.previous = current;
+        current.next = newNode;
+
+        return true;
+    }
 
 
 
